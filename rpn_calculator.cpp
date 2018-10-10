@@ -3,6 +3,7 @@
 //
 
 #include "rpn_calculator.hpp"
+#include <sstream>
 
 using namespace std;
 
@@ -26,4 +27,24 @@ void rpn_calculator::perform(operation *op)
     stack.pop();
     result = op->perform(a, b);
     stack.push(result);
+}
+
+int rpn_calculator::process_formula(string formula)
+{
+    istringstream iss(formula);
+    string operand;
+    while(iss >> operand)
+    {
+        istringstream iss2(operand);
+        int number;
+        if(iss2 >> number)
+        {
+            stack.push(number);
+        }
+        else
+        {
+            perform(operation_type(operand[0]));
+        }
+    }
+    return stack.top();
 }

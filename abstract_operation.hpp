@@ -13,5 +13,5 @@ private:
 public:
     abstract_operation(char op) : operation_type(op) {}
     char get_code() override {return operation_type;}
-    ~abstract_operation() override {}
+    virtual ~abstract_operation() {}
 };

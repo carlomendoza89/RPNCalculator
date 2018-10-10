@@ -15,7 +15,7 @@ public:
 
     int perform(int a, int b) override
     {
-        return a * b;
+        return a / b;
     }
 
     ~division_operation() {}
