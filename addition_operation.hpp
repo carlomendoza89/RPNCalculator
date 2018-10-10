@@ -13,6 +13,13 @@ public:
 
     addition_operation() : abstract_operation(ADDITION_CODE) {}
 
+    /**
+     * performs an addition between two numbers
+     *
+     * @param a first number
+     * @param b second number
+     * @return sum
+     */
     int perform(int a, int b) override
     {
         return a + b;

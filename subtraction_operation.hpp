@@ -13,6 +13,13 @@ public:
 
     substraction_operation() : abstract_operation(SUBTRACTION_CODE) {}
 
+    /**
+     * performs a subtraction of one number from another
+     *
+     * @param a minuend
+     * @param b subtrahend
+     * @return difference
+     */
     int perform(int a, int b) override
     {
         return a - b;

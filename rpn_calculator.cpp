@@ -21,11 +21,17 @@ operation* rpn_calculator::operation_type(int operation)
 
 void rpn_calculator::perform(operation *op)
 {
+    //take the first number from the stack and make it the second operand
     int b = stack.top();
+    //remove the number from the stack
     stack.pop();
+    //take the second number from the stack and make it the first operand
     int a = stack.top();
+    //remove the number from the stack
     stack.pop();
+    //perform operation based on which kind op points to
     result = op->perform(a, b);
+    //put the result on the stack
     stack.push(result);
 }
 
@@ -33,6 +39,7 @@ int rpn_calculator::process_formula(string formula)
 {
     istringstream iss(formula);
     string operand;
+
     while(iss >> operand)
     {
         istringstream iss2(operand);

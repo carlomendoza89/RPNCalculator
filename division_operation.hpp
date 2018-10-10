@@ -13,6 +13,13 @@ public:
 
     division_operation() : abstract_operation(DIVISION_CODE) {}
 
+    /**
+     * performs a division of one number by another
+     *
+     * @param a dividend
+     * @param b divisor
+     * @return quotient
+     */
     int perform(int a, int b) override
     {
         return a / b;

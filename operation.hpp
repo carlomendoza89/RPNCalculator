@@ -4,6 +4,9 @@
 
 #pragma once
 
+/**
+ * Interface for operation classes
+ */
 class operation
 {
 public:

@@ -13,6 +13,13 @@ public:
 
     multiplication_operation() : abstract_operation(MULTIPLICATION_CODE) {}
 
+    /**
+     * performs a multiplication between two numbers
+     *
+     * @param a multiplicand
+     * @param b multiplicator
+     * @return product
+     */
     int perform(int a, int b) override
     {
         return a * b;
