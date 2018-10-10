@@ -24,7 +24,8 @@ int main()
  */
 void test() {
     std::string formula = "15 7 1 1 + - / 3 * 2 1 1 + + -";
-    std::cout << "You entered " << formula << std::endl;
+    std::cout << "You entered " << std::endl;
+    std::cout << formula << std::endl;
     rpn_calculator calculator;
     int result = calculator.process_formula(formula);
     std::cout << "The result is:\n";
