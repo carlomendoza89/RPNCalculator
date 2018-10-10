@@ -25,5 +25,5 @@ public:
         return a - b;
     }
 
-    ~substraction_operation() {}
+    ~substraction_operation() override {}
 };

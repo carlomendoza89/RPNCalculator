@@ -25,5 +25,5 @@ public:
         return a + b;
     }
 
-    ~addition_operation() {}
+    ~addition_operation() override {}
 };

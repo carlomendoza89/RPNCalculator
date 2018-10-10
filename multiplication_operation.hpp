@@ -25,5 +25,5 @@ public:
         return a * b;
     }
 
-    ~multiplication_operation() {}
+    ~multiplication_operation() override {}
 };

@@ -25,5 +25,5 @@ public:
         return a / b;
     }
 
-    ~division_operation() {}
+    ~division_operation() override {}
 };
