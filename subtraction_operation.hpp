@@ -6,12 +6,12 @@
 
 #include "abstract_operation.hpp"
 
-class substraction_operation : public abstract_operation
+class subtraction_operation : public abstract_operation
 {
 public:
     static const char SUBTRACTION_CODE {'-'};
 
-    substraction_operation() : abstract_operation(SUBTRACTION_CODE) {}
+    subtraction_operation() : abstract_operation(SUBTRACTION_CODE) {}
 
     /**
      * performs a subtraction of one number from another
@@ -25,5 +25,5 @@ public:
         return a - b;
     }
 
-    ~substraction_operation() override {}
+    ~subtraction_operation() override {}
 };

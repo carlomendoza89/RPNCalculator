@@ -12,7 +12,7 @@ operation* rpn_calculator::operation_type(int operation)
     switch(operation)
     {
         case addition_operation::ADDITION_CODE : return new addition_operation;
-        case substraction_operation::SUBTRACTION_CODE : return new substraction_operation;
+        case subtraction_operation::SUBTRACTION_CODE : return new subtraction_operation;
         case multiplication_operation::MULTIPLICATION_CODE : return new multiplication_operation;
         case division_operation::DIVISION_CODE : return new division_operation;
         default: cout << "Invalid operation code" << endl;
